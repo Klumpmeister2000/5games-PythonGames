@@ -10,6 +10,7 @@ running = True
 # surface
 surf = pygame.Surface((100,200))
 surf.fill('orange')
+x = 100
 
 while running:
     # event loop
@@ -19,7 +20,8 @@ while running:
 
     # draw the game
     display_surface.fill('darkgrey')
-    display_surface.blit(surf, (100, 150))
+    x += 0.1
+    display_surface.blit(surf, (x, 150))
     pygame.display.update()
 
 
