@@ -13,7 +13,7 @@ while running:
             running = False
 
     # draw the game
-    # fill the window with red color
+    display_surface.fill('red')
     pygame.display.update()
 
 
