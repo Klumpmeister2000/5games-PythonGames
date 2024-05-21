@@ -9,6 +9,7 @@ running = True
 
 # surface
 surf = pygame.Surface((100,200))
+surf.fill('orange')
 
 while running:
     # event loop
