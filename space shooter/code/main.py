@@ -7,6 +7,9 @@ display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption('Space Shooter')
 running = True
 
+# surface
+surf = pygame.Surface((100,200))
+
 while running:
     # event loop
     for event in pygame.event.get():
@@ -14,7 +17,8 @@ while running:
             running = False
 
     # draw the game
-    display_surface.fill('cyan2')
+    display_surface.fill('darkgrey')
+    display_surface.blit(surf, (100, 150))
     pygame.display.update()
 
 
